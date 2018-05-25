@@ -184,7 +184,6 @@ const BodyContentWrapper = styled.div`
   p {
     padding: 40px 0;
     color: #aaa;
-    /* color: #cecece; */
     font-weight: bold;
     font-size: ${vpScale(16, 24, 320, 2500, 'vw-px')};
   }
@@ -229,6 +228,7 @@ const RightArrow = styled.div`
 
   border-left: 10px solid white;
 `;
+
 const LeftArrow = styled.div`
   width: 0;
   height: 0;
@@ -340,8 +340,7 @@ class LifeLanding extends Component {
             <CardBody>
               <BodyContentWrapper>
                 <h2>
-                  Life<br />
-                  Is Art.
+                  Life<br />Is Art.
                 </h2>
                 <p>Love the life you live. Live the life you love.</p>
                 <ArrowWrapper>
@@ -351,8 +350,6 @@ class LifeLanding extends Component {
                   <div>
                     <RightArrow />
                   </div>
-                  {/* <div>◀</div>
-                  <div>▶</div> */}
                 </ArrowWrapper>
               </BodyContentWrapper>
               <BodyImgWrapper>
@@ -371,7 +368,7 @@ class LifeLanding extends Component {
           </LeftWrap>
           <RightWrap>
             <CardSide>
-              Login <span>☰</span>
+              Login<span>☰</span>
             </CardSide>
           </RightWrap>
         </CardWrapper>
