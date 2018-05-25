@@ -368,7 +368,7 @@ class LifeLanding extends Component {
           </LeftWrap>
           <RightWrap>
             <CardSide>
-              Login<span> ☰</span>
+              Login <span>☰</span>
             </CardSide>
           </RightWrap>
         </CardWrapper>
