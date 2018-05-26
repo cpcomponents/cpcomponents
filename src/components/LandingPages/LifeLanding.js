@@ -31,6 +31,7 @@ const vpScale = (minSize, maxSize, minScreen, maxScreen, scaleMode) => {
     case 'vmin-px':
       return minmaxScale.withPx('100vmin');
     default:
+      // for debugging
       console.log('vpScale - recieved invalid scale type vvv');
       console.log(
         `${minSize}, ${maxSize}, ${minScreen}, ${maxScreen}, '${scaleMode}'`
