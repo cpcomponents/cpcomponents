@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import styles from './App.css';
+import './App.css';
+
 import LifeLanding from './components/LandingPages/LifeLanding';
 
 class App extends Component {
