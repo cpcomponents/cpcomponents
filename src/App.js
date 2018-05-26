@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import LifeLanding from './components/LandingPages/LifeLanding';
+import BoxyLanding from './components/LandingPages/BoxyLanding';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h2>Copy Paste Components</h2>
-        <LifeLanding />
+        {/* <h2>Copy Paste Components</h2> */}
+        <BoxyLanding />
       </div>
     );
   }
