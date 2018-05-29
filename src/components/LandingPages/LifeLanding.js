@@ -334,7 +334,11 @@ class LifeLanding extends Component {
               </NavItemsWrapper>
               <NavSearch>
                 <span>
-                  Search...<MagGlass>🔍</MagGlass>
+                  Search...<MagGlass>
+                    <span role="img" aria-label="Magnifying Glass">
+                      🔍
+                    </span>
+                  </MagGlass>
                 </span>
               </NavSearch>
             </NavWrapper>
