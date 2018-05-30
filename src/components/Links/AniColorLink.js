@@ -7,6 +7,7 @@ const A = styled.a`
   font-size: 20px;
   padding-right: 15px;
   font-weight: normal;
+  cursor: pointer;
   position: relative;
   z-index: 2;
 
