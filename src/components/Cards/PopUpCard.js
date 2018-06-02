@@ -55,7 +55,7 @@ const Paragraph = styled.p`
   font-size: calc(13px + (13 - 13) * (100vw - 320px) / (750 - 320));
 `;
 
-const PoppingCard = () => {
+const PopUpCard = () => {
   return (
     <Wrapper>
       <ImageHalf>
@@ -76,4 +76,4 @@ const PoppingCard = () => {
   );
 };
 
-export default PoppingCard;
+export default PopUpCard;
