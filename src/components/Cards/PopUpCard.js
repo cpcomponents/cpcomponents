@@ -55,22 +55,15 @@ const Paragraph = styled.p`
   font-size: calc(13px + (13 - 13) * (100vw - 320px) / (750 - 320));
 `;
 
-const PopUpCard = () => {
+const PopUpCard = props => {
   return (
     <Wrapper>
       <ImageHalf>
-        <img
-          src="https://images.unsplash.com/photo-1505773170783-58f82a520465?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3288093a41bb48f021aac5c157d41af&auto=format&fit=crop&w=2100&q=80"
-          alt="boob"
-        />
+        <img src={props.src} alt={props.alt} />
       </ImageHalf>
       <TextHalf>
-        <Heading>Looky there...</Heading>
-        <Paragraph>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          doloribus perspiciatis quidem nesciunt hic libero incidunt vero iusto
-          dolor!
-        </Paragraph>
+        <Heading>{props.heading}</Heading>
+        <Paragraph>{props.paragraph}</Paragraph>
       </TextHalf>
     </Wrapper>
   );
