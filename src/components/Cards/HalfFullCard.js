@@ -63,18 +63,12 @@ const RightArrow = styled.span`
   }
 `;
 
-const HalfFullCard = () => {
+const HalfFullCard = props => {
   return (
     <Wrapper>
-      <MainHeading>&#x02116; 923</MainHeading>
-      <SubHeading>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </SubHeading>
-      <Content>
-        Quia cum, corrupti assumenda autem fugiat nisi illo officia porro sint
-        sunt fugit sed quas, quasi harum deserunt, suscipit consectetur
-        repudiandae architecto!
-      </Content>
+      <MainHeading>{props.mainHeading}</MainHeading>
+      <SubHeading>{props.subHeading}</SubHeading>
+      <Content>{props.content}</Content>
       <div>
         <RightArrow>&#x021A0;</RightArrow>
       </div>
