@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   /* ---- CSS Variables Section ----- */
-  --trans-spd: 130ms;
+  --trans-spd: 420ms;
+  --cubic-curve: cubic-bezier(0.57, 0.43, 0, 1.01);
   /* -------------------------------- */
   font-size: 50px;
   padding: 2px 17px;
@@ -12,7 +13,7 @@ const Button = styled.button`
   position: relative;
   z-index: 2;
   cursor: pointer;
-  transition: color var(--trans-spd) ease-in;
+  transition: color var(--trans-spd) var(--cubic-curve);
 
   &:hover {
     color: white;
@@ -29,7 +30,7 @@ const Button = styled.button`
     z-index: -1;
     transform: scaleY(0);
     transform-origin: 0 100%;
-    transition: transform var(--trans-spd) ease-in;
+    transition: transform var(--trans-spd) var(--cubic-curve);
   }
 
   &:hover::before {
