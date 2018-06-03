@@ -63,6 +63,13 @@ class FlattenHamToggle extends Component {
     });
   };
 
+  componentWillReceiveProps(nextProps) {
+    let toggleActive = nextProps.toggleActive;
+    this.setState({
+      toggleActive
+    });
+  }
+
   render() {
     return (
       <MainWrapper
@@ -72,13 +79,7 @@ class FlattenHamToggle extends Component {
         thickness={this.props.thickness}
       >
         <SubWrapper>
-          <Menu
-            toggleActive={
-              this.props.toggleActive
-                ? this.props.toggleActive
-                : this.state.toggleActive
-            }
-          />
+          <Menu toggleActive={this.state.toggleActive} />
         </SubWrapper>
       </MainWrapper>
     );

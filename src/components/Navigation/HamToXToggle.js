@@ -62,28 +62,29 @@ class HamToXToggle extends Component {
     toggleActive: false
   };
 
-  toggleButton = () => {
+  handleToggle = () => {
     this.setState({
       toggleActive: !this.state.toggleActive
     });
   };
 
+  componentWillReceiveProps(nextProps) {
+    let toggleActive = nextProps.toggleActive;
+    this.setState({
+      toggleActive
+    });
+  }
+
   render() {
     return (
       <MainWrapper
-        onClick={this.toggleButton}
+        onClick={this.handleToggle}
         width={this.props.width}
         height={this.props.height}
         thickness={this.props.thickness}
       >
         <SubWrapper>
-          <Menu
-            toggleActive={
-              this.props.toggleActive
-                ? this.props.toggleActive
-                : this.state.toggleActive
-            }
-          />
+          <Menu toggleActive={this.state.toggleActive} />
         </SubWrapper>
       </MainWrapper>
     );
