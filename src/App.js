@@ -1,14 +1,39 @@
 import React, { Component } from 'react';
-import './App.css';
+import styled from 'styled-components';
 
-import FlattenHamToggle from './components/Navigation/FlattenHamToggle';
+import ArbitraryComponent from './components/Templates/ArbitraryComponent';
+import ArbitraryClassComponent from './components/Templates/ArbitraryClassComponent';
+
+const HeaderWrapper = styled.div`
+  background: #3f9081;
+  padding: 0 20px;
+`;
+
+const Name = styled.h1`
+  letter-spacing: 1px;
+  color: white;
+  padding: 30px 0 20px;
+  font-weight: bold;
+  text-align: center;
+`;
+
+const WorkspaceDesc = styled.p`
+  color: white;
+  padding-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+`;
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h2>Copy Paste Components</h2>
-        <FlattenHamToggle width="40px" height="23px" thickness="3px" />
+        <HeaderWrapper>
+          <Name>Copy Paste Components</Name>
+          <WorkspaceDesc>Testing Sandbox</WorkspaceDesc>
+        </HeaderWrapper>
+        <ArbitraryComponent />
+        {/* <ArbitraryClassComponent /> */}
       </div>
     );
   }
