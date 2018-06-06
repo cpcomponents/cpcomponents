@@ -69,10 +69,11 @@ class HamToXToggle extends Component {
   };
 
   componentWillReceiveProps(nextProps) {
-    let toggleActive = nextProps.toggleActive;
-    this.setState({
-      toggleActive
-    });
+    if (nextProps.toggleActive !== this.state.toggleActive) {
+      this.setState({
+        toggleActive: nextProps.toggleActive
+      });
+    }
   }
 
   render() {
