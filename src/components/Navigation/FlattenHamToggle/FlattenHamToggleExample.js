@@ -1,9 +1,7 @@
-// Example ussage of component toggled with interal state
-//
+// Example ussage of component toggled with interal state //
 <FlattenHamToggle width="40px" height="23px" thickness="3px" />;
 
-// Example ussage of component toggled with external state passed via prop
-//
+// Example ussage of component toggled with external state passed via prop //
 <FlattenHamToggle
   toggleActive={this.state.toggle}
   width="40px"
