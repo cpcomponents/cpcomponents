@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   /* ---- CSS Variables Section ----- */
-  --btn-color: #5f9ea0;
+  --btn-color: ${props => (props.btnColor ? props.btnColor : '#5f9ea0')};
+  --font-color: ${props => (props.fontColor ? props.fontColor : '#fff')};
   --btn-width: 180px;
   /* -------------------------------- */
   font-size: 20px;
@@ -11,7 +12,7 @@ const Button = styled.button`
   border: 0;
   border-radius: 5px;
   background: var(--btn-color);
-  color: white;
+  color: var(--font-color);
   width: var(--btn-width);
   position: relative;
 
@@ -41,7 +42,7 @@ const ButtonText = styled.span`
 
 const SlideArrowButton = props => {
   return (
-    <Button>
+    <Button btnColor={props.btnColor} fontColor={props.fontColor}>
       <ButtonText>{props.children}</ButtonText>
     </Button>
   );

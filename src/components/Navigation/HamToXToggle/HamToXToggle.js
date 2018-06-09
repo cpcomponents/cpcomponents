@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const MainWrapper = styled.div`
   /* ---- CSS Variables Section ----- */
+  --color: ${props => (props.color ? props.color : '#3b3c36')};
   --menu-width: ${props => (props.width ? props.width : '50px')};
   --menu-height: ${props => (props.width ? props.height : '30px')};
   --bar-thickness: ${props => (props.thickness ? props.thickness : '4px')};
@@ -21,7 +22,7 @@ const SubWrapper = styled.div`
 
 const Menu = styled.div`
   --rotate: ${props => (props.toggleActive ? '135deg' : '0deg')};
-  background: black;
+  background: var(--color);
   position: absolute;
   width: 100%;
   height: var(--bar-thickness);
@@ -36,7 +37,7 @@ const Menu = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    background: black;
+    background: var(--color);
     transform: rotate(var(--rotate));
     transition: top calc(var(--trans-speed) - 200ms) ease-in,
       transform calc(var(--trans-speed) + 300ms);
@@ -69,7 +70,7 @@ class HamToXToggle extends Component {
   };
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.toggleActive !== this.state.toggleActive) {
+    if (this.props.toggleActive !== nextProps.toggleActive) {
       this.setState({
         toggleActive: nextProps.toggleActive
       });
@@ -80,6 +81,7 @@ class HamToXToggle extends Component {
     return (
       <MainWrapper
         onClick={this.handleToggle}
+        color={this.props.color}
         width={this.props.width}
         height={this.props.height}
         thickness={this.props.thickness}
