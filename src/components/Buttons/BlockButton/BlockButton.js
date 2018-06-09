@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   /* ---- CSS Variables Section ----- */
-  --btn-color: #5f9ea0;
-  --hover-color: #538b8d;
-  --font-color: #fff;
+  --btn-color: ${props => (props.btnColor ? props.btnColor : '#5f9ea0')};
+  --hover-color: ${props => (props.hoverColor ? props.hoverColor : '#538b8d')};
+  --font-color: ${props => (props.fontColor ? props.fontColor : '#fff')};
   --trans-speed: 250ms;
   /* -------------------------------- */
   display: block;
@@ -25,7 +25,15 @@ const Button = styled.button`
 `;
 
 const BlockButton = props => {
-  return <Button>{props.children}</Button>;
+  return (
+    <Button
+      fontColor={props.fontColor}
+      btnColor={props.btnColor}
+      hoverColor={props.hoverColor}
+    >
+      {props.children}
+    </Button>
+  );
 };
 
 export default BlockButton;

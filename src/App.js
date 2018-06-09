@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import ArbitraryComponent from './components/Templates/ArbitraryComponent';
-import ArbitraryClassComponent from './components/Templates/ArbitraryClassComponent';
-
 const HeaderWrapper = styled.div`
   background: #3f9081;
   padding: 0 20px;
@@ -32,8 +29,6 @@ class App extends Component {
           <Name>Copy Paste Components</Name>
           <WorkspaceDesc>Testing Sandbox</WorkspaceDesc>
         </HeaderWrapper>
-        <ArbitraryComponent />
-        {/* <ArbitraryClassComponent /> */}
       </div>
     );
   }

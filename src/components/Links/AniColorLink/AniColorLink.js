@@ -2,8 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const A = styled.a`
+  /* ---- CSS Variables Section ----- */
+  --ani-color: ${props => (props.aniColor ? props.aniColor : '#bfdbff')};
+  --font-color: ${props => (props.fontColor ? props.fontColor : '#3b3c36')};
+  /* -------------------------------- */
   text-decoration: none;
-  color: #000;
+  color: var(--font-color);
   font-size: 20px;
   padding-right: 15px;
   font-weight: normal;
@@ -13,7 +17,7 @@ const A = styled.a`
 
   &::before {
     content: '';
-    background: #bfdbff;
+    background: var(--ani-color);
     position: absolute;
     top: 55%;
     left: 0;
@@ -31,7 +35,11 @@ const A = styled.a`
 `;
 
 const AniColorLink = props => {
-  return <A href={props.href}>{props.children}</A>;
+  return (
+    <A href={props.href} aniColor={props.aniColor} fontColor={props.fontColor}>
+      {props.children}
+    </A>
+  );
 };
 
 export default AniColorLink;
