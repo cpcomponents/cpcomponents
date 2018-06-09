@@ -14,6 +14,7 @@ const Button = styled.button`
   background: var(--btn-color);
   color: var(--font-color);
   width: var(--btn-width);
+  cursor: pointer;
   position: relative;
 
   &::after {
