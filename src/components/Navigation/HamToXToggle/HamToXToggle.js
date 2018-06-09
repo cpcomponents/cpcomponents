@@ -12,6 +12,7 @@ const MainWrapper = styled.div`
   width: 100%;
   height: 100%;
   padding: 10px;
+  cursor: pointer;
 `;
 
 const SubWrapper = styled.div`
