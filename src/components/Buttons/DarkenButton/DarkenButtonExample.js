@@ -1,4 +1,4 @@
-// Example usage of component with optional props //
+/* Example usage of component with optional props */
 <DarkenButton
   btnColor="var(--pri-color)"
   hoverColor="var(--pri-hover)"

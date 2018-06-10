@@ -1,4 +1,4 @@
-// Example usage of component toggled with internal state //
+/* Example usage of component toggled with internal state */
 <FlattenHamToggle
   color="var(--black)"
   width="50px"
@@ -6,7 +6,7 @@
   thickness="4px"
 />
 
-// Example usage of component toggled with external state passed via prop //
+/* Example usage of component toggled with external state passed via prop */
 <FlattenHamToggle
   toggleActive={this.state.toggle}
   color="var(--black)"

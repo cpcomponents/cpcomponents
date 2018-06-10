@@ -1,4 +1,4 @@
-// Example usage of component with props //
+/* Example usage of component with props */
 <HalfFullCard
   mainHeading="&#x02116; 923"
   subHeading="Lorem ipsum dolor sit amet consectetur adipisicing elit."
