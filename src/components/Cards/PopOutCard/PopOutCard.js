@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   /* ---- CSS Variables Section ----- */
-  --sec-color: #444;
-  --pri-color: #c2956e;
+  --cp-sec-color: #444;
+  --cp-pri-color: #c2956e;
   /* -------------------------------- */
   width: calc(230px + (255 - 230) * (100vmin - 320px) / (750 - 320));
   height: calc(230px + (255 - 230) * (100vmin - 320px) / (750 - 320));
@@ -22,13 +22,13 @@ const Wrapper = styled.div`
 `;
 
 const Icon = styled.i`
-  color: var(--pri-color);
+  color: var(--cp-pri-color);
   font-size: calc(50px + (60 - 50) * (100vmin - 320px) / (750 - 320));
-  margin: 15px;
+  margin-top: 35px;
 `;
 
 const HeadingOne = styled.h3`
-  color: var(--pri-color);
+  color: var(--cp-pri-color);
   font-size: calc(25px + (28 - 25) * (100vmin - 320px) / (750 - 320));
   font-weight: normal;
   margin: 15px;
@@ -41,12 +41,12 @@ const HeadingTwo = styled.h2`
   margin: 12px;
   font-weight: bold;
   font-size: calc(20px + (22 - 20) * (100vmin - 320px) / (750 - 320));
-  color: var(--pri-color);
+  color: var(--cp-pri-color);
   white-space: nowrap;
 `;
 
 const MirroredHeading = HeadingTwo.extend`
-  color: var(--sec-color);
+  color: var(--cp-sec-color);
   margin-top: -28px;
   font-weight: bold;
   letter-spacing: 6px;
