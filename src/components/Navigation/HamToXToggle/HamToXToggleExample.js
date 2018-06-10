@@ -1,4 +1,4 @@
-// Example usage of component toggled with internal state //
+/* Example usage of component toggled with internal state */
 <HamToXToggle
   color="var(--pri-color)"
   width="50px"
@@ -6,7 +6,7 @@
   thickness="4px"
 />
 
-// Example usage of component toggled with external state passed via prop //
+/* Example usage of component toggled with external state passed via prop */
 <HamToXToggle
   toggleActive={this.state.toggle}
   color="var(--pri-color)"
