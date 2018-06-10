@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   --pop-distance: 12px;
   /* -------------------------------- */
   overflow: hidden;
+  background: white;
   width: calc(225px + (312 - 225) * (100vw - 320px) / (750 - 320));
   height: 370px;
   border: var(--brdr-width) solid var(--brdr-color);
