@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   width: calc(230px + (255 - 230) * (100vmin - 320px) / (750 - 320));
   height: calc(230px + (255 - 230) * (100vmin - 320px) / (750 - 320));
   padding: 30px 20px 70px;
-  background: #f3f3f3;
+  background: #efefef;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +33,7 @@ const HeadingOne = styled.h3`
   font-weight: normal;
   margin: 15px;
   padding-bottom: 20px;
-  border-bottom: 2px solid #c5c5c5;
+  border-bottom: 2px solid #cfcfcf;
 `;
 
 const HeadingTwo = styled.h2`

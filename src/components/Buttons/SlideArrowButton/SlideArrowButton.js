@@ -34,6 +34,7 @@ const Button = styled.button`
 `;
 
 const ButtonText = styled.span`
+  color: var(--font-color);
   transition: all 250ms;
 
   ${Button}:hover & {
