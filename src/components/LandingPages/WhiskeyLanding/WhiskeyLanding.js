@@ -73,8 +73,8 @@ const slideOut = keyframes`
 `;
 
 const Bottle = styled.img`
-  width: ${vpScale(200, 600, 320, 1000, 'vmin-px')};
-  height: ${vpScale(200, 600, 320, 1000, 'vmin-px')};
+  width: ${vpScale(170, 600, 320, 1000, 'vmin-px')};
+  height: ${vpScale(170, 600, 320, 1000, 'vmin-px')};
   object-fit: cover;
   position: absolute;
   top: 50%;
