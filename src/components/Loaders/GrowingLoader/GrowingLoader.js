@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components';
 
 const Wrapper = styled.div`
   /* ---- CSS Variables Section ----- */
-  --color: ${props => (props.color ? props.color : '#79bec6')}
+  --color: ${props => (props.color ? props.color : '#79bec6')};
   --ani-duration: 1234ms;
   --ani-time-func: ease-in-out;
   /* -------------------------------- */
