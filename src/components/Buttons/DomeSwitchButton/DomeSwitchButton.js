@@ -6,7 +6,7 @@ const Toggle = styled.div`
   --size: ${props => (props.btnSize ? props.btnSize : '100px')};
   /* -------------------------------- */
   /* fz set for em unit used on button blur */
-  font-size: 20px;
+  font-size: 8px;
 
   overflow: hidden;
   position: relative;
@@ -65,7 +65,7 @@ const Button = styled.span`
   background: #ccd0d4;
   box-shadow: ${props =>
     props.toggle ? 'var(--active-shadow)' : 'var(--inactive-shadow)'};
-  filter: blur(0.05em);
+  filter: blur(0.1em);
   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
 `;
 
