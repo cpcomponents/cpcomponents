@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   --color: ${props => (props.color ? props.color : '#ffab9d')};
   --size: ${props => (props.size ? props.size : '50px')};
   /* -------------------------------- */
+  display: inline-block;
   font-family: Avenir, sans-serif;
   color: #111;
 `;
